@@ -94,24 +94,13 @@ body {
   }
 
   .list {
-    margin-top: 0;
+    margin: 0;
     padding-left: 15px;
   }
 
-  .list li:not(:last-child) {
+  .item:not(:last-child) {
     margin-bottom: 20px;
   }
-
-  /* img:not(figure img) {
-    margin-bottom: 40px;
-  }
-
-  figure {
-    display: inline-block;
-    margin: 0;
-    margin-bottom: 40px;
-    width: 872px;
-  } */
 
   .figure-img {
     display: inline-block;
@@ -120,10 +109,6 @@ body {
     width: 872px;
   }
 
-  img:not(.figure-img img) {
+  .img:not(.figure-img-img) {
     margin-bottom: 40px;
   }
-
-  /* img:not(.figure-img img):not(:last-child) {
-    margin-bottom: 40px;
-  } */
