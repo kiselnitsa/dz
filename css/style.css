@@ -21,6 +21,7 @@ img {
 
 body {
 	font-family: 'font', sans-serif;
+  font-family: Arial, Verdana, sans-serif;
 }
 
 .main-content {
@@ -42,12 +43,27 @@ body {
   margin-bottom: 50px;
 }
 
-.link {
+.link_button {
   display: inline-block;
   padding: 24px 49px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #3f2aff;
 }
 
-.link:not(:last-child) {
+.link {
+  display: inline-block;
+  padding-left: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #3f2aff;
+  background-image: url("/img/download.png");
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 25px 25px;
+}
+
+.link_button:not(:last-child) {
   margin-right: 25px;
 }
 
@@ -60,21 +76,50 @@ body {
   .title-main {
     margin-top: 0;
     margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #333;
   }
 
   .title-2 {
     margin-top: 0;
     margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 46px;
+    color: #333;
   }
 
   .title-3 {
     margin-top: 0;
     margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    color: #333;
   }
 
   .text {
     margin-top: 0;
     width: 872px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333;
+  }
+
+  .text-accent {
+    display: inline-block;
+    text-align: center;
+    margin-top: 0;
+    padding: 50px 95px;
+    border-radius: 20px;
+    width: auto; /* если делать 100% то отличается от картинки */
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    background-color: #3f2aff;
     margin-bottom: 40px;
   }
 
@@ -82,6 +127,16 @@ body {
     border-radius: 20px;
     padding: 30px;
     background-color: #f3f3f3;
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+
+  .gray-box.image-1 {
+    background-image: url("/img/decorate-1.png");
+  }
+
+  .gray-box.image-2 {
+    background-image: url("/img/decorate-2.png");
   }
 
   .gray-box:not(:last-child) {
@@ -93,9 +148,25 @@ body {
     margin-bottom: 10px;
   }
 
+  .gray-box .text:last-child {
+    margin-bottom: 0;
+  }
+
   .list {
     margin: 0;
     padding-left: 15px;
+  }
+
+  ul li::marker {
+    color: #3f2aff;
+  }
+
+  .item {
+    /* border-bottom: 1px solid; тогда подчеркивается до конца, а это не как на картинке */
+    text-decoration: 1px underline;
+    text-underline-offset: 5px;
+    font-size: 20px;
+    color: #3f2aff;
   }
 
   .item:not(:last-child) {
@@ -106,7 +177,18 @@ body {
     display: inline-block;
     margin: 0;
     margin-bottom: 40px;
-    width: 872px;
+    width: 875px;
+    font-size: 0;
+
+  }
+
+  .figure-img figcaption {
+    border: 1px solid #b6b6b6;
+    border-top: none;
+    padding: 19px;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
   }
 
   .img:not(.figure-img-img) {
